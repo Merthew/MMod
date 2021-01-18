@@ -7,7 +7,7 @@ public class Reference {
 	
 	public static final String MODID = "mmod";
 	
-	public static final ItemGroup ITEM_GROUP = new ItemGroup("Merthew Mod") {
+	public static final ItemGroup ITEM_GROUP = new ItemGroup("mmod") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(Registry.MACHINEBASE.get());

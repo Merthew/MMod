@@ -1,8 +1,5 @@
 package merthew.mod;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import merthew.mod.util.Reference;
 import merthew.mod.util.Registry;
 import net.minecraft.block.Block;
@@ -22,7 +19,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class MMod
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    //private static final Logger LOGGER = LogManager.getLogger();
 
     public MMod() {
         // Register the setup method for modloading
@@ -43,7 +40,7 @@ public class MMod
     private void setup(final FMLCommonSetupEvent event)
     {
         // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
+        //LOGGER.info("HELLO FROM PREINIT");
         //	LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 
@@ -77,7 +74,7 @@ public class MMod
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
             // register a new block here
-            LOGGER.info("HELLO from Register Block");
+            //LOGGER.info("HELLO from Register Block");
         }
     }
 }
